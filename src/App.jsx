@@ -184,7 +184,6 @@ const App = () => {
           </div>
         </div>
       </footer>
-      <div>Hello Word</div>
     </>
   );
 };

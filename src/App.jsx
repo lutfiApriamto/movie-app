@@ -61,7 +61,7 @@ const App = () => {
       {/* Hero section end */}
 
       {/* main section start */}
-      <section id="main" className="pt-6">
+      <section id="main" className="pt-6 ">
         <div className="w-full md:h-1/2 container mx-auto px-6 sm:flex sm:flex-wrap sm:justify-center gap-6">
           {data &&
             data.map((movie) => (
@@ -96,27 +96,29 @@ const App = () => {
 
       {/* main section end */}
 
-      <footer className="w-full bg-black p-4 mt-16">
-        <div className="container mx-auto w-full ">
-          <div className="w-full">
-            <div className="w-full flex justify-center">
-              <h1 className="font-bold text-6xl  text-red-600 text-center w-1/2 mb-4">
+      <footer className="w-full bg-black p-4 mt-16 relative bottom-0">
+        <div className="container mx-auto w-full sm:max-w-none">
+
+          <div className="w-full md:flex md:justify-around md:items-center ">
+
+            <div className="w-1/2 flex justify-center mx-auto font-bold text-5xl  lg:text-6xl text-red-600 text-center mb-1  sm:w-2/5 md:mb-0   md:w-1/3 md:text-center">
+              <h1 className="md:w-2/3">
                 Lucha Movies
               </h1>
             </div>
 
-            <div>
-              <p className="text-2xl text-white font-semibold mb-4 px-3">
+            <div className=" flex justify-center flex-wrap  md:w-2/5 self-stretch md:justify-normal">
+              <p className=" w-full text-xl text-white font-semibold my-4 text-center px-3 sm:py-2 md:text-lg md:text-left">
                 Follow us !
               </p>
-              <div class="flex items-center justify-around px-6 py-4">
+              <div className="flex md:pl-3 flex-wrap w-3/4 sm:w-3/5 items-center justify-between mb-6 sm:mb-3 sm:gap-y-2 sm:justify-around ">
                 <a
                   href="https://www.tiktok.com/@wanpisssoo?_t=8mmUDz1FSQJ&_r=1"
-                  class="w-12 h-12 rounded-full mr-3 flex items-center justify-center border border-slate-300 text-white hover:border-red-500 hover:bg-red-500 hover:text-black transition-all duration-500"
+                  className="w-10 h-10 md:w-8 md:h-8 rounded-full mr-3 flex items-center justify-center border border-slate-300 text-white hover:border-red-500 hover:bg-red-500 hover:text-black transition-all duration-500"
                 >
                   <svg
-                    class="fill-current"
-                    width="24"
+                    className="fill-current"
+                    width="20"
                     role="img"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
@@ -128,11 +130,11 @@ const App = () => {
 
                 <a
                   href="https://www.instagram.com/lutfiamto?igsh=aXBobW11b2ZzYTkz"
-                  class="w-12 h-12 rounded-full mr-3 flex items-center justify-center border border-slate-300 text-white hover:border-red-500 hover:bg-red-500 hover:text-black"
+                  className="transition-all duration-500 w-10 h-10 md:w-8 md:h-8 rounded-full mr-3 flex items-center justify-center border border-slate-300 text-white hover:border-red-500 hover:bg-red-500 hover:text-black"
                 >
                   <svg
-                    class="fill-current"
-                    width="24"
+                    className="fill-current"
+                    width="20"
                     role="img"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
@@ -144,11 +146,11 @@ const App = () => {
 
                 <a
                   href="https://x.com/matchawwwww?t=yc0yRiQDor7tDtYluHltPQ&s=09"
-                  class="w-12 h-12 rounded-full mr-3 flex items-center justify-center border border-slate-300 text-white hover:border-red-500 hover:bg-red-500 hover:text-black"
+                  className="transition-all duration-500 w-10 h-10 md:w-8 md:h-8 rounded-full mr-3 flex items-center justify-center border border-slate-300 text-white hover:border-red-500 hover:bg-red-500 hover:text-black"
                 >
                   <svg
-                    class="fill-current"
-                    width="24"
+                    className="fill-current"
+                    width="20"
                     role="img"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
@@ -160,11 +162,11 @@ const App = () => {
 
                 <a
                   href="https://github.com/lutfiApriamto"
-                  class="w-12 h-12 rounded-full mr-3 flex items-center justify-center border border-slate-300 text-white hover:border-red-500 hover:bg-red-500 hover:text-black"
+                  className="transition-all duration-500 w-10 h-10 md:w-8 md:h-8 rounded-full mr-3 flex items-center justify-center border border-slate-300 text-white hover:border-red-500 hover:bg-red-500 hover:text-black"
                 >
                   <svg
-                    class="fill-current"
-                    width="24"
+                    className="fill-current"
+                    width="20"
                     role="img"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
@@ -176,9 +178,12 @@ const App = () => {
               </div>
             </div>
 
-            <div>
-              <p className="font-light text-sm text-white px-4">
-                Copy right © by Muhammad Lutfi Apriamto{" "}
+            <div className=" flex flex-col items-center justify-center gap-y-3 md:self-stretch md:w-1/4">
+              <p className=" w-full font-light text-sm text-center text-white">
+                Copy right © by Muhammad Lutfi Apriamto All Rights Reserved
+              </p>
+              <p className="font-semibold text-sm text-center text-white px-4">
+                OMDB API : <span className="text-red-500 font-bold hover:text-red-700 hover:shadow-lg transition duration-500 hover:cursor-pointer"><a href="https://www.omdbapi.com/"></a> Link</span>
               </p>
             </div>
           </div>

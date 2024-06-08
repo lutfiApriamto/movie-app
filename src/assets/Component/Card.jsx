@@ -38,7 +38,7 @@ const Card = (props) => {
           <p className="text-white font-thin text-sm sm:text-sm">{movieYear}</p>
         </div>
         <button
-          className="font-light text-xl bg-red-600 rounded-md text-white py-2 px-4 mt-auto md:text-sm"
+          className="font-light lg:text-xl bg-red-600 rounded-md text-white py-2 px-4 mt-auto md:text-sm"
           onClick={showModal}
         >
           Show detail..

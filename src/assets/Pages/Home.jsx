@@ -20,7 +20,7 @@ const Home = () => {
 
   const onSearchClickHandler = async () => {
     await onSearchHandler();
-    navigate('/usersearch');
+    navigate('/searchmovies');
   };
 
   return (

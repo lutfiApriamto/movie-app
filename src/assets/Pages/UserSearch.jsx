@@ -12,7 +12,7 @@ const UserSearch = () => {
   const { searchTerm, setSearchTerm, onSearchHandler, data, error } = useContext(SearchContext);
   return (
     <>
-       <Header searchTerm={searchTerm} setSearchTerm={setSearchTerm} onSearchHandler={onSearchHandler} />
+      <Header searchTerm={searchTerm} setSearchTerm={setSearchTerm} onSearchHandler={onSearchHandler} />
       <Hero />
       <div className="text-center flex justify-center sm:mt-5">
         {error && <h1 className="text-3xl font-bold text-red-600">{error}</h1>}

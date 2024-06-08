@@ -11,7 +11,7 @@ const SearchSection = ({ data }) => {
             src={movie.Poster}
             movieTitle={movie.Title}
             movieYear={movie.Year}
-            movieId={movie.imdbID} // Kirimkan movieId ke Card
+            movieId={movie.imdbID}
           />
         ))}
       </div>

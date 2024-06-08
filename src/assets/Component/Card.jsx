@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import Modal from './Modal'; // Pastikan path ini sesuai
+import Modal from './Modal';
 
 const Card = (props) => {
   const { src, movieTitle, movieYear, movieId } = props;
@@ -10,7 +10,7 @@ const Card = (props) => {
 
   const showModal = async () => {
     setIsLoading(true);
-    setIsModalOpen(true); // Open modal immediately
+    setIsModalOpen(true);
     try {
       const response = await axios.get(`http://www.omdbapi.com/?apikey=fba3f92f&i=${movieId}`);
       setModalData(response.data);

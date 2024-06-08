@@ -18,7 +18,7 @@ const Modal = ({ data, closeModal, isLoading }) => {
               className="text-red-600 absolute right-[4px] top-[-30px] lg:top-[-40px] md:text-2xl lg:text-4xl"
               onClick={() => {
                 setShow(false);
-                setTimeout(closeModal, 300); // Delay to allow animation to complete
+                setTimeout(closeModal, 300);
               }}
             >
               X

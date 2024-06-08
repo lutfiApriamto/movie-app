@@ -18,7 +18,7 @@ const Footer = () => {
             </p>
             <div className="flex md:pl-3 flex-wrap w-3/4 sm:w-3/5 items-center justify-between mb-6 sm:mb-3 sm:gap-y-2 sm:justify-around ">
               <a
-                href="https://www.tiktok.com/@wanpisssoo?_t=8mmUDz1FSQJ&_r=1"
+                href="https://www.tiktok.com/@wanpisssoo?_t=8mmUDz1FSQJ&_r=1" target="_blank"
                 className="w-10 h-10 md:w-8 md:h-8 rounded-full mr-3 flex items-center justify-center border border-slate-300 text-white hover:border-red-500 hover:bg-red-500 hover:text-black transition-all duration-500"
               >
                 <svg
@@ -34,7 +34,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://www.instagram.com/lutfiamto?igsh=aXBobW11b2ZzYTkz"
+                href="https://www.instagram.com/lutfiamto?igsh=aXBobW11b2ZzYTkz" target="_blank"
                 className="transition-all duration-500 w-10 h-10 md:w-8 md:h-8 rounded-full mr-3 flex items-center justify-center border border-slate-300 text-white hover:border-red-500 hover:bg-red-500 hover:text-black"
               >
                 <svg
@@ -50,7 +50,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://x.com/matchawwwww?t=yc0yRiQDor7tDtYluHltPQ&s=09"
+                href="https://x.com/matchawwwww?t=yc0yRiQDor7tDtYluHltPQ&s=09" target="_blank"
                 className="transition-all duration-500 w-10 h-10 md:w-8 md:h-8 rounded-full mr-3 flex items-center justify-center border border-slate-300 text-white hover:border-red-500 hover:bg-red-500 hover:text-black"
               >
                 <svg
@@ -66,7 +66,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://github.com/lutfiApriamto"
+                href="https://github.com/lutfiApriamto" target="_blank"
                 className="transition-all duration-500 w-10 h-10 md:w-8 md:h-8 rounded-full mr-3 flex items-center justify-center border border-slate-300 text-white hover:border-red-500 hover:bg-red-500 hover:text-black"
               >
                 <svg
@@ -88,7 +88,7 @@ const Footer = () => {
               Copy right © by Muhammad Lutfi Apriamto All Rights Reserved
             </p>
             <p className="font-semibold text-sm text-center text-white px-4">
-              OMDB API : <span className="text-red-500 font-bold hover:text-red-700 hover:shadow-lg transition duration-500 hover:cursor-pointer"><a href="https://www.omdbapi.com/"></a> Link</span>
+              OMDB API : <a href="https://www.omdbapi.com/" target="_blank" className="text-red-500 font-bold hover:text-red-700 hover:shadow-lg transition duration-500 hover:cursor-pointer">Link</a> 
             </p>
           </div>
         </div>

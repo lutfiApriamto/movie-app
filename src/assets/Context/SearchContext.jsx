@@ -20,7 +20,7 @@ export const SearchProvider = ({ children }) => {
         setError(responseData.Error);
       } else {
         setData(responseData.Search || []);
-        setError(''); // Reset error message if the response is successful
+        setError('');
       }
     } catch (error) {
       console.error(error);

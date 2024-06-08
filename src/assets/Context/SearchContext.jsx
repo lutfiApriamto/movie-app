@@ -1,12 +1,13 @@
-// SearchContext.jsx
 import React, { createContext, useState, useEffect } from 'react';
 import axios from 'axios';
 export const SearchContext = createContext();
+
 
 export const SearchProvider = ({ children }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [data, setData] = useState([]);
   const [error, setError] = useState('');
+  const apiKey = import.meta.env.VITE_REACT_APP_OMDB_API_KEY;
 
   const onSearchHandler = async () => {
     if (!searchTerm) {
@@ -15,7 +16,7 @@ export const SearchProvider = ({ children }) => {
     }
 
     try {
-      const { data: responseData } = await axios.get(`http://www.omdbapi.com/?apikey=fba3f92f&s=${searchTerm}`);
+      const { data: responseData } = await axios.get(`https://www.omdbapi.com/?apikey=${apiKey}&s=${searchTerm}`);
       if(responseData.Response === 'False'){
         setError(responseData.Error);
       } else {

@@ -7,6 +7,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import UserSearch from "./assets/Pages/UserSearch";
 import { SearchProvider } from './assets/Context/SearchContext';
 
+
+
 const router = createBrowserRouter([
   {
     path: "/",

@@ -7,6 +7,7 @@ const MovieContainer = ({ title, data }) => {
   const [modalData, setModalData] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const apiKey = import.meta.env.VITE_REACT_APP_OMDB_API_KEY;
 
   const settings = {
     dots: false,
@@ -60,7 +61,7 @@ const MovieContainer = ({ title, data }) => {
     setIsLoading(true);
     setIsModalOpen(true);
     try {
-      const response = await axios.get(`http://www.omdbapi.com/?apikey=fba3f92f&i=${imdbID}`);
+      const response = await axios.get(`https://www.omdbapi.com/?apikey=${apiKey}&i=${imdbID}`);
       setModalData(response.data);
     } catch (error) {
       console.error(error);
